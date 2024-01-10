@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    direction: rtl;
+    font-family: "Almarai-Bold";
+}
+.page_body_container{
+    padding: 15px;
+}
+
+.main_color{
+    color: #7c6363;
+}
+.basic_color{
+    color: #54493c;
+}
+.main_color_bg{
+    background-color: #869b94;
+}
+.white{
+    color: #fff9f0
+}
+
+
+label{
+    margin-bottom: 5px;
+}
+th, td{
+    background-color: transparent !important;
+    border-color: #e3d5c0;
+}
+
+
+
+
+
+
+.form-control{
+    background-color: #fdf6ea;
+    border-color: #e3d5c0;
+    color: #54493c;
+}
+.form-control:focus {
+    background-color: #fdf6ea;
+    border-color: #c9b7ab;
+    color: #54493c;
+    box-shadow: 0 0 0 2px rgb(124 99 99 / 37%);
+}
+@font-face {
+    font-family: 'ReadexPro-Regular';
+    src: url('assets/fonts/Readex_Pro/static/ReadexPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Almarai-Bold';
+    src: url('assets/fonts/Almarai/Almarai-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

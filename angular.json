@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "auction": {
+      "i18n":{
+        "sourceLocale":"en-US",
+        "locales": {
+          "ar-EG": "src/locale/messages.es.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +19,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": [
+              "ar-EG"
+            ],
             "outputPath": "dist/auction",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -25,9 +34,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -96,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

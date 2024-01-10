@@ -1,0 +1,16 @@
+a{
+    color: #fff9f0
+}
+link.active, .navbar-nav .nav-link.show{
+    color: #fff9f0
+}
+.dropdown-item:hover, .dropdown-item:focus{
+    color: #f3e9da;
+    background-color: #5b6864a6
+}
+.nav-link:hover, .nav-link:focus {
+    color: #f3e9da !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #f3e9da !important;
+}

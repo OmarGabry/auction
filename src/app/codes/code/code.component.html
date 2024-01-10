@@ -1,0 +1,33 @@
+<app-header [title]="code.page_name"></app-header>
+<div class="container-fluid page_body_container">
+    <form [formGroup]="form">
+        <div class="row">
+            <div class="col-md-3">
+                <label class="basic_color" for="name">{{code.code_name}}</label>
+                <input  formControlName="name" class="form-control" type="text"> 
+            </div>
+        </div>
+        <div>
+          <button [disabled]="!form.valid" (click)="submit()">إدراج</button>
+        </div>
+    </form>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">{{code.code_name}}</th>
+            <th *ngIf="parent" scope="col">{{parent.code_name}}</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cd of codes_list; let i = index">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{cd[code.api + "_name"]}}</td> 
+            <td *ngIf="parent"></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+

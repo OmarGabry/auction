@@ -1,0 +1,14 @@
+.app_container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page_container{
+    height: 86vh;
+    background-color: #f5e9d6;
+    width: 95vw;
+    margin-top: 30px;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
